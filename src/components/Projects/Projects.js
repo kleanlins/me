@@ -3,10 +3,7 @@ import React from 'react'
 const Projects = () => {
     return (
         <div>
-            <li>
-                <u>Hello</u>
-                <u>Hello</u>
-            </li>
+            <h1>MY PROJECTS</h1>
         </div>
     )
 }

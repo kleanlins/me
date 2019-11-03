@@ -3,7 +3,7 @@ import Header from "./components/Header/Header"
 import Footer from './components/Footer/Footer'
 import Body from "./components/Body/Body";
 import './App.css'
-import {StateProvider} from "./components/StateContext";
+import {StateProvider} from "./contexts/StateContext";
 
 function App() {
     return (

@@ -1,8 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+
 .main {
-    height: 95vh;
+    height: 98vh;
     display: grid;
     grid-gap: 1em;
     padding-right: 1em;
     padding-left: 1em;
     grid-template-rows: min-content auto min-content;
 }
+
+h1, h2 {
+    font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 4px;
+    color: #414141;
+    font-weight: lighter;
+}
+
+.header-footer {
+    font-family: 'Reem Kufi', sans-serif;
+    letter-spacing: 4px;
+    color: dimgray;
+    color: #414141;
+    font-weight: lighter;
+}
+
