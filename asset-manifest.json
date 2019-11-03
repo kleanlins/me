@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/kleanlins/me/static/css/main.ca17b451.chunk.css",
+    "main.js": "/kleanlins/me/static/js/main.dd3898aa.chunk.js",
+    "main.js.map": "/kleanlins/me/static/js/main.dd3898aa.chunk.js.map",
+    "runtime-main.js": "/kleanlins/me/static/js/runtime-main.20c73931.js",
+    "runtime-main.js.map": "/kleanlins/me/static/js/runtime-main.20c73931.js.map",
+    "static/js/2.114b55ff.chunk.js": "/kleanlins/me/static/js/2.114b55ff.chunk.js",
+    "static/js/2.114b55ff.chunk.js.map": "/kleanlins/me/static/js/2.114b55ff.chunk.js.map",
+    "index.html": "/kleanlins/me/index.html",
+    "precache-manifest.d0976d3e42ea71d909c611dd1536b719.js": "/kleanlins/me/precache-manifest.d0976d3e42ea71d909c611dd1536b719.js",
+    "service-worker.js": "/kleanlins/me/service-worker.js",
+    "static/css/main.ca17b451.chunk.css.map": "/kleanlins/me/static/css/main.ca17b451.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.20c73931.js",
+    "static/js/2.114b55ff.chunk.js",
+    "static/css/main.ca17b451.chunk.css",
+    "static/js/main.dd3898aa.chunk.js"
+  ]
+}
