@@ -2,8 +2,3 @@
     font-size: 13vh;
     letter-spacing: 1ex;
 }
-
-.grid {
-    display: grid;
-    grid-template-columns: 60% 40%;
-}

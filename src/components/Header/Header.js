@@ -1,16 +1,17 @@
 import React, { useContext } from "react"
 import "./Header.css"
 import "../../App.css"
-import {StateContext} from "../../contexts/StateContext";
+import {SectionContext} from "../../contexts/SectionContext";
 
 const Header = () => {
-    const [, setState] = useContext(StateContext)
+    const [section, setState] = useContext(SectionContext)
     return (
         <div className="header">
-            <h2 onClick={() => setState(0)}>WHO AM I</h2>
-            <h2 onClick={() => setState(1)}>SKILLS</h2>
-            <h2 onClick={() => setState(2)}>PROJECTS</h2>
-            <h2 onClick={() => setState(3)}>CONTACT</h2>
+            <a href="#" onClick={() => setState(0)}> &lt; </a>
+            <a href="#" onClick={() => setState(1)}>WHO AM I</a>
+            <a href="#" onClick={() => setState(2)}>SKILLS</a>
+            <a href="#" onClick={() => setState(3)}>PROJECTS</a>
+            <a href="#" onClick={() => setState(4)}>CONTACT</a>
         </div>
     )
 }

@@ -4,8 +4,8 @@ import "./Footer.css"
 const Footer = () => {
     return (
         <div className="footer">
-            <h2>GITHUB</h2>
-            <h2>TWITTER</h2>
+            <a href="https://github.com/kleanlins">GITHUB</a>
+            <a href="https://twitter.com/kleanlins">TWITTER</a>
         </div>
     )
 }

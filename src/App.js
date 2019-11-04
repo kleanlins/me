@@ -3,17 +3,17 @@ import Header from "./components/Header/Header"
 import Footer from './components/Footer/Footer'
 import Body from "./components/Body/Body";
 import './App.css'
-import {StateProvider} from "./contexts/StateContext";
+import {SectionProvider} from "./contexts/SectionContext";
 
 function App() {
     return (
-        <StateProvider>
+        <SectionProvider>
             <div className="main">
                 <Header />
                 <Body />
                 <Footer />
             </div>
-        </StateProvider>
+        </SectionProvider>
     );
 }
 
