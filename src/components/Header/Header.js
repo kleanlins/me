@@ -7,11 +7,11 @@ const Header = () => {
     const [section, setState] = useContext(SectionContext)
     return (
         <div className="header">
-            <a href="#" onClick={() => setState(0)}> &lt; </a>
-            <a href="#" onClick={() => setState(1)}>WHO AM I</a>
-            <a href="#" onClick={() => setState(2)}>SKILLS</a>
-            <a href="#" onClick={() => setState(3)}>PROJECTS</a>
-            <a href="#" onClick={() => setState(4)}>CONTACT</a>
+            <h1 className="cursor" onClick={() => setState(0)}> &lt; </h1>
+            <h1 className="cursor" onClick={() => setState(1)}>WHO AM I</h1>
+            <h1 className="cursor" onClick={() => setState(2)}>SKILLS</h1>
+            <h1 className="cursor" onClick={() => setState(3)}>PROJECTS</h1>
+            <h1 className="cursor" onClick={() => setState(4)}>CONTACT</h1>
         </div>
     )
 }

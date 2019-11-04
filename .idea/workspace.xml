@@ -4,21 +4,9 @@
     <list default="true" id="4901d08a-a6eb-441c-a5b3-825dc3175cdc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/manifest.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Body.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Body/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/Contact.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/Contact.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Greeting/Greeting.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Greeting/Greeting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Greeting/Greeting.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Greeting/Greeting.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Presentation/Presentation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Presentation/Presentation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Projects/Projects.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Projects/Projects.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Skills/Skills.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Skills/Skills.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/contexts/StateContext.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/contexts/SectionContext.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -138,7 +126,7 @@
       <workItem from="1572733730571" duration="16596000" />
       <workItem from="1572782990389" duration="7131000" />
       <workItem from="1572791760042" duration="14015000" />
-      <workItem from="1572832522908" duration="8100000" />
+      <workItem from="1572832522908" duration="8934000" />
     </task>
     <task id="LOCAL-00001" summary="First commit with no CSS styling.">
       <created>1572783335647</created>
@@ -154,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572819841383</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Basic fading on each section and outside links updated.">
+      <created>1572840714390</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1572840714390</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -176,6 +171,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit with no CSS styling." />
     <MESSAGE value="Implementing transitions for each section." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementing transitions for each section." />
+    <MESSAGE value="Basic fading on each section and outside links updated." />
+    <option name="LAST_COMMIT_MESSAGE" value="Basic fading on each section and outside links updated." />
   </component>
 </project>

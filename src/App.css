@@ -30,3 +30,7 @@ h1, h2, a {
     font-family: 'Scope One', serif;
     letter-spacing: 0;
 }
+
+.cursor {
+    cursor: pointer;
+}
