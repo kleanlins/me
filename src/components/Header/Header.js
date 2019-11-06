@@ -4,7 +4,8 @@ import "../../App.css"
 import {SectionContext} from "../../contexts/SectionContext";
 
 const Header = () => {
-    const [section, setState] = useContext(SectionContext)
+    const [, setState] = useContext(SectionContext)
+
     return (
         <div className="header">
             <h1 className="cursor" onClick={() => setState(0)}> &lt; </h1>

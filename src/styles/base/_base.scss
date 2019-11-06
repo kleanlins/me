@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Reem+Kufi&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Scope+One&display=swap');
+
+html {
+  background: black;
+}
+
+h1, h2, a {
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 4px;
+  color: aliceblue;
+  font-weight: lighter;
+  text-decoration-line: none;
+}
+
+.header-footer {
+  font-family: 'Reem Kufi', sans-serif;
+  letter-spacing: 4px;
+  color: dimgray;
+  color: #414141;
+  font-weight: lighter;
+}
+
+.slim-text {
+  font-family: 'Scope One', serif;
+  letter-spacing: 0;
+}
+
+.cursor {
+  cursor: pointer;
+}

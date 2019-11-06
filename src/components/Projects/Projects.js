@@ -1,16 +1,12 @@
-import React from 'react'
-import {useSpring, animated} from "react-spring";
+import React  from 'react'
 
 const Projects = () => {
 
-    const props = useSpring({
-        to: {opacity: 1},
-        from: {opacity: 0}
-    })
-
     return (
-        <animated.div style={props}>
-            <h1>CINSIDE</h1>
+        <div>
+            <a href='https://github.com/InsideCI/insideci.github.io'>
+                <h1>CINSIDE</h1>
+            </a>
             <h2 className="slim-text">
                 CInside is a informational blog for the Center of Informatics at UFPB.
                 The blog focuses on sharing knowledge, university statistics, projects opportunities and
@@ -18,20 +14,33 @@ const Projects = () => {
                 It was written entirely using ReactJS.
             </h2>
             <br/>
-            <h1>NEGO</h1>
+            <a href='https://github.com/InsideCI/nego'>
+                <h1>NEGO</h1>
+            </a>
             <h2 className="slim-text">
                 A public REST API developed mainly for the CInside project.
                 Written in Golang and backed up by PostgreSQL, it has an structure focused on microservices
                 capabilities.
             </h2>
             <br/>
-            <h1>BALEASY</h1>
+            <a href='https://github.com/kleanlins/Baleasy'>
+                <h1>BALEASY</h1>
+            </a>
             <h2 className="slim-text">
                 A complete system for helping you out with parking.
                 Consists of sensors around the vehicle and an Android app for visual representation of your
                 car "line sights".
             </h2>
-        </animated.div>
+            <br />
+            <a href='https://github.com/kleanlins/bora'>
+                <h1>BORA</h1>
+            </a>
+            <h2 className="slim-text">
+                A real time data plotting software for the Formula UFPB student team.
+                It's a complete analysis system, composed by embedded device for capturing data
+                and the software that receive data transmitted wirelessly.
+            </h2>
+        </div>
     )
 }
 

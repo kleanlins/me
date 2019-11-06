@@ -1,15 +1,8 @@
 import React from 'react'
-import {useSpring, animated} from "react-spring";
 
 const Skills = () => {
-
-    const props = useSpring({
-        to: {opacity: 1},
-        from: {opacity: 0}
-    })
-
     return (
-        <animated.div style={props}>
+        <div>
             <div>
                 <h2>BACK END</h2>
                 <h2 className="slim-text">Golang, Docker, SQL</h2>
@@ -30,7 +23,7 @@ const Skills = () => {
                 <h2>GENERAL PURPOSE</h2>
                 <h2 className="slim-text">C++, Python</h2>
             </div>
-        </animated.div>
+        </div>
     )
 }
 
