@@ -11,7 +11,8 @@ import {Transition} from "react-transition-group";
 const Body = () => {
 
     const [id] = useContext(SectionContext)
-    const [state, setState] = useState(false)
+
+    const [transition, setTransition] = useState(false)
     const [section, setSection] = useState(<Greeting/>)
 
     const stages = [
@@ -22,13 +23,15 @@ const Body = () => {
         <Contact/>
     ]
 
-    const transitionTime = 1000
+    const transitionTime = 750
 
     useEffect(() => {
-        setState(false)
+        setTransition(false)
+
         setTimeout(() => {
-            setState(true)
+            setTransition(true)
         }, transitionTime)
+
         setTimeout(() => {
             setSection(stages[id])
         }, transitionTime)
@@ -48,7 +51,7 @@ const Body = () => {
 
     return (
         <div className="grid body">
-            <Transition in={state} timeout={transitionTime}>
+            <Transition in={transition} timeout={transitionTime}>
                 {state => (
                     <div style={{
                         ...defaultStyle,

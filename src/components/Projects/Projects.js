@@ -37,8 +37,8 @@ const Projects = () => {
             </a>
             <h2 className="slim-text">
                 A real time data plotting software for the Formula UFPB student team.
-                It's a complete analysis system, composed by embedded device for capturing data
-                and the software that receive data transmitted wirelessly.
+                It's a complete analysis system composed by an embedded device for capturing data
+                and a cross-platform software that receives data transmitted wirelessly.
             </h2>
         </div>
     )

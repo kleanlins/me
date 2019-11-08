@@ -3,8 +3,12 @@ import React from 'react';
 const Contact = () => {
     return (
         <div>
-            <h1>You can find me on WhatsApp or Telegram:</h1>
-            <h2 className='slim-text'>83 9 8210 3542</h2>
+            <h1>Telegram</h1>
+            <h2 className='slim-text'>@kleanlins</h2>
+            <br />
+            <h1>E-mail</h1>
+            <h2 className='slim-text'>cleandersonlins@gmail.com</h2>
+            <br />
         </div>
     );
 };
