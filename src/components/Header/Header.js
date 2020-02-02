@@ -1,10 +1,10 @@
 import React, { useContext } from "react"
 import "./Header.css"
-import "../../App.css"
+import "../../App.scss"
 import {SectionContext} from "../../contexts/SectionContext";
 
 const Header = () => {
-    const [, setState] = useContext(SectionContext)
+    const [, setState] = useContext(SectionContext);
 
     return (
         <div className="header">
