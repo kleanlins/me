@@ -1,5 +1,7 @@
 .header {
   position: absolute;
+  top: 0;
+  left: 0;
 
   height: 100vh;
   width: 100%;
@@ -8,6 +10,8 @@
   grid-gap: 1em;
   grid-template-rows: repeat(5, fit-content);
   text-align: center;
+
+  background-color: black;
 }
 
 .item {
@@ -26,4 +30,10 @@
   position: absolute;
   right: 2em;
   top: 2em;
+  z-index: 2;
+  padding: 1em;
+}
+
+.hover {
+  z-index: 2;
 }

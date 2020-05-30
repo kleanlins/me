@@ -16,13 +16,18 @@ const Header = () => {
   };
 
   const toggleButton = () => (
-    <span className={`toggle ${!hidden ? "hidden" : ""}`}>?</span>
+    <span
+      onClick={() => toggleHidden(!hidden)}
+      className={`toggle ${!hidden ? "hidden" : ""}`}
+    >
+      ?
+    </span>
   );
 
   return (
-    <>
+    <div style={{ display: "relative" }}>
       {toggleButton()}
-      <div className={`header ${hidden ? "hidden" : ""}`}>
+      <div className={`header ${hidden ? "hidden" : "hover"}`}>
         <h1
           className={`cursor item ${sectionId === 0 ? "hidden" : ""}`}
           onClick={() => handleChangeSection(0)}
@@ -43,7 +48,7 @@ const Header = () => {
           CONTACT
         </h1>
       </div>
-    </>
+    </div>
   );
 };
 

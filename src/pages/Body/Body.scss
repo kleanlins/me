@@ -1,0 +1,16 @@
+.body {
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+
+  height: 100%;
+  align-items: center;
+  align-self: center;
+  justify-items: center;
+}
+
+.body .animated {
+  padding: 1em;
+  margin-top: 20vh;
+}

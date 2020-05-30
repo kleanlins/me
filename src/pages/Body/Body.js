@@ -1,4 +1,4 @@
-import "./Body.css";
+import "./Body.scss";
 
 import React, { useContext } from "react";
 import { animated, config, useTransition } from "react-spring";
@@ -17,6 +17,7 @@ const Body = () => {
 
   const transitions = useTransition(id, (p) => p, {
     from: {
+      position: "absolute",
       opacity: 0,
       transform: "scale(0.8)",
     },
