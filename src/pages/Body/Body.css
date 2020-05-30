@@ -1,8 +1,18 @@
 .body {
-    align-self: center;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: 60% 40%;
+.body .animated {
+  padding: 1em;
+  position: absolute;
+}
+
+@media only screen and (min-width: 900px) {
+  .body .animated {
+    width: 60%;
+    padding: 3em;
+  }
 }

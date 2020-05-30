@@ -1,5 +1,29 @@
 .header {
-    display: grid;
-    grid-gap: 3em;
-    grid-template-columns: min-content auto min-content min-content min-content;
+  position: absolute;
+
+  height: 100vh;
+  width: 100%;
+
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: repeat(5, fit-content);
+  text-align: center;
+}
+
+.item {
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+.toggle {
+  color: white;
+  position: absolute;
+  right: 2em;
+  top: 2em;
 }

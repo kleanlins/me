@@ -1,4 +1,4 @@
 .greeting {
-    font-size: 13vh;
-    letter-spacing: 1ex;
+  font-size: clamp(3em, 8vw, 10em);
+  letter-spacing: 1ex;
 }

@@ -1,17 +1,17 @@
-import React from 'react'
-import {skills} from "../../static/skills";
+import React from "react";
+import { skills } from "../../static/skills";
 
 const Skills = () => {
   return (
     <div>
-      {skills.map(skill => (
-        <div>
+      {skills.map((skill) => (
+        <div style={{ marginBottom: "3em" }}>
           <h2>{skill.spec}</h2>
           <h2 className="slim-text">{skill.stack}</h2>
         </div>
       ))}
     </div>
-  )
+  );
 };
 
-export default Skills
+export default Skills;

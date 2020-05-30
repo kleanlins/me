@@ -1,67 +1,41 @@
-import React, {useContext, useEffect, useState} from "react";
-import {Transition} from "react-transition-group";
-import {SectionContext} from "../../contexts/SectionContext"
+import "./Body.css";
+
+import React, { useContext } from "react";
+import { animated, config, useTransition } from "react-spring";
+
+import Contact from "../../components/Contact";
 import Greeting from "../../components/Greeting";
 import Presentation from "../../components/Presentation";
-import Skills from "../../components/Skills";
 import Projects from "../../components/Projects";
-import Contact from "../../components/Contact";
-import "./Body.css"
+import { SectionContext } from "../../contexts/SectionContext";
+import Skills from "../../components/Skills";
 
 const Body = () => {
+  const [id] = useContext(SectionContext);
 
-    const [id] = useContext(SectionContext);
+  const stages = [Greeting, Presentation, Skills, Projects, Contact];
 
-    const [transition, setTransition] = useState(false);
-    const [section, setSection] = useState(<Greeting/>);
+  const transitions = useTransition(id, (p) => p, {
+    from: {
+      opacity: 0,
+      transform: "scale(0.8)",
+    },
+    enter: { opacity: 1, transform: "scale(1)" },
+    leave: { opacity: 0, transform: "scale(1.2)" },
+    config: config.stiff,
+  });
 
-    const stages = [
-        <Greeting/>,
-        <Presentation/>,
-        <Skills/>,
-        <Projects/>,
-        <Contact/>
-    ];
-
-    const transitionTime = 750
-
-    useEffect(() => {
-        setTransition(false);
-
-        setTimeout(() => {
-            setTransition(true)
-        }, transitionTime);
-
-        setTimeout(() => {
-            setSection(stages[id])
-        }, transitionTime)
-    },[id]);
-
-    const defaultStyle = {
-        transition: `opacity ${transitionTime}ms ease-in-out`,
-        opacity: 0,
-    };
-
-    const transitionStyles = {
-        entering: { opacity: 1 },
-        entered:  { opacity: 1 },
-        exiting:  { opacity: 0 },
-        exited:  { opacity: 0 },
-    };
-
-    return (
-        <div className="grid body">
-            <Transition in={transition} timeout={transitionTime}>
-                {state => (
-                    <div style={{
-                        ...defaultStyle,
-                        ...transitionStyles[state]}}>
-                        {section}
-                    </div>)}
-            </Transition>
-        </div>
-    )
-
+  return (
+    <div className="body">
+      {transitions.map(({ item, key, props }) => {
+        return (
+          <animated.div className={"animated"} key={key} style={props}>
+            {stages[item]()}
+          </animated.div>
+        );
+      })}
+    </div>
+  );
 };
 
 export default Body;
