@@ -19,10 +19,10 @@ const Body = () => {
     from: {
       position: "absolute",
       opacity: 0,
-      transform: "scale(0.8)",
+      transform: "scale(1.2)",
     },
     enter: { opacity: 1, transform: "scale(1)" },
-    leave: { opacity: 0, transform: "scale(1.2)" },
+    leave: { opacity: 0, transform: "scale(0.8)" },
     config: config.stiff,
   });
 
