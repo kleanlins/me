@@ -1,6 +1,0 @@
-.footer {
-    display: grid;
-    grid-gap: 3em;
-    grid-template-columns: min-content min-content;
-    justify-content: right;
-}

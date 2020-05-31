@@ -1,8 +1,8 @@
-import "./Header.css";
-import "../../App.scss";
+import "./Header.scss";
 
 import React, { useContext, useState } from "react";
 
+import { MenuOutlined } from "@ant-design/icons";
 import { SectionContext } from "../../contexts/SectionContext";
 
 const Header = () => {
@@ -20,33 +20,26 @@ const Header = () => {
       onClick={() => toggleHidden(!hidden)}
       className={`toggle ${!hidden ? "hidden" : ""}`}
     >
-      ?
+      <MenuOutlined />
     </span>
   );
+
+  const headerButtons = [
+    { id: 1, label: "WHO" },
+    { id: 2, label: "SKILLS" },
+    { id: 3, label: "PROJECTS" },
+    { id: 4, label: "CONTACT" },
+  ];
 
   return (
     <div style={{ display: "relative" }}>
       {toggleButton()}
       <div className={`header ${hidden ? "hidden" : "hover"}`}>
-        <h1
-          className={`cursor item ${sectionId === 0 ? "hidden" : ""}`}
-          onClick={() => handleChangeSection(0)}
-        >
-          {" "}
-          &lt;{" "}
-        </h1>
-        <h1 className="cursor item" onClick={() => handleChangeSection(1)}>
-          WHO AM I
-        </h1>
-        <h1 className="cursor item" onClick={() => handleChangeSection(2)}>
-          SKILLS
-        </h1>
-        <h1 className="cursor item" onClick={() => handleChangeSection(3)}>
-          PROJECTS
-        </h1>
-        <h1 className="cursor item" onClick={() => handleChangeSection(4)}>
-          CONTACT
-        </h1>
+        {headerButtons.map(({ id, label }) => (
+          <h1 className="cursor item" onClick={() => handleChangeSection(id)}>
+            {label}
+          </h1>
+        ))}
       </div>
     </div>
   );

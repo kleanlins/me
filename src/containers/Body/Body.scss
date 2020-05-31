@@ -1,5 +1,6 @@
 .body {
-  padding: 1em;
+  width: 100%;
+  position: relative;
 
   display: flex;
   flex-direction: column;
@@ -9,11 +10,14 @@
 }
 
 .body .animated {
-  padding: 1em;
+  top: 0;
+  left: 0;
+
   margin-top: 20vh;
+  margin-left: 1em;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 800px) {
   .body .animated {
     width: 60%;
   }

@@ -3,12 +3,12 @@ import "./Body.scss";
 import React, { useContext } from "react";
 import { animated, config, useTransition } from "react-spring";
 
-import Contact from "../../components/Contact";
-import Greeting from "../../components/Greeting";
-import Presentation from "../../components/Presentation";
-import Projects from "../../components/Projects";
+import Contact from "../../pages/Contact";
+import Greeting from "../../pages/Greeting";
+import Presentation from "../../pages/Presentation";
+import Projects from "../../pages/Projects";
 import { SectionContext } from "../../contexts/SectionContext";
-import Skills from "../../components/Skills";
+import Skills from "../../pages/Skills";
 
 const Body = () => {
   const [id] = useContext(SectionContext);
@@ -19,10 +19,10 @@ const Body = () => {
     from: {
       position: "absolute",
       opacity: 0,
-      transform: "scale(1.2)",
+      transform: "scale(1.1)",
     },
     enter: { opacity: 1, transform: "scale(1)" },
-    leave: { opacity: 0, transform: "scale(0.8)" },
+    leave: { opacity: 0, transform: "scale(0.9)" },
     config: config.stiff,
   });
 

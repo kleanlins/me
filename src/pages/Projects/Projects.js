@@ -3,7 +3,12 @@ import { projects } from "../../static/projects";
 
 const Projects = () => {
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+      }}
+    >
       {projects.map((project) => (
         <div style={{ marginBottom: "2em" }}>
           <a href={project.link}>

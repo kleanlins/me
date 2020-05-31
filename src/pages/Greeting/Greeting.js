@@ -1,4 +1,4 @@
-import "./Greeting.css";
+import "./Greeting.scss";
 
 import React from "react";
 
