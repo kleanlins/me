@@ -6,7 +6,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import { SectionContext } from "../../contexts/SectionContext";
 
 const Header = () => {
-  const [sectionId, setSection] = useContext(SectionContext);
+  const [setSection] = useContext(SectionContext);
 
   const [hidden, toggleHidden] = useState(true);
 
@@ -18,7 +18,7 @@ const Header = () => {
   const toggleButton = () => (
     <span
       onClick={() => toggleHidden(!hidden)}
-      className={`toggle ${!hidden ? "hidden" : ""}`}
+      className={`toggle ${!hidden && "hidden"}`}
     >
       <MenuOutlined />
     </span>
