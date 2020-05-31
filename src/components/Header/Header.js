@@ -6,7 +6,7 @@ import { MenuOutlined } from "@ant-design/icons";
 import { SectionContext } from "../../contexts/SectionContext";
 
 const Header = () => {
-  const [setSection] = useContext(SectionContext);
+  const [, setSection] = useContext(SectionContext);
 
   const [hidden, toggleHidden] = useState(true);
 
@@ -15,7 +15,7 @@ const Header = () => {
     setSection(id);
   };
 
-  const toggleButton = () => (
+  const sectionsButton = () => (
     <span
       onClick={() => toggleHidden(!hidden)}
       className={`toggle ${!hidden && "hidden"}`}
@@ -33,7 +33,7 @@ const Header = () => {
 
   return (
     <div style={{ display: "relative" }}>
-      {toggleButton()}
+      {sectionsButton()}
       <div className={`header ${hidden ? "hidden" : "hover"}`}>
         {headerButtons.map(({ id, label }) => (
           <h1 className="cursor item" onClick={() => handleChangeSection(id)}>
